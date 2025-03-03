@@ -1,0 +1,92 @@
+.bg-primary-hp {
+    background-color: #B12A26;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.steps-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    position: relative;
+}
+span.step-text {
+    position: absolute;
+    bottom: -30px;
+    font-weight: 600;
+    color: #D7D7D7;
+    text-wrap-mode: nowrap;
+}
+.fw-500{
+    font-weight: 500;
+}
+.step-circle {
+    width: 66px;
+    height: 66px;
+    background: #D7D7D7;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.step-circle.active span.step-text {
+    color: #B12A26;
+}
+.step-circle.active {
+    background: #B12A26;
+}
+
+.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #ccc;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.progress-fill {
+    height: 4px;
+    width: 0;
+    background: #B12A26;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fw-700 {
+    font-weight: 700;
+}
+/* form */
+.input-hp {
+    height: 60px;
+    border-radius: 0;
+    border: 1px solid #00000060;
+    padding: 0.375rem 30px;
+}
+label.hp-lebal {
+    position: absolute;
+    top: -20%;
+    background: #f8f9fa;
+    left: 2%;
+    padding: 0 5px;
+}
+.form-field-hp{
+    position: relative;
+}
+.text-capitalized{
+    text-transform: capitalize;
+}
